@@ -40,6 +40,7 @@
             listNames = new ListBox();
             label3 = new Label();
             label4 = new Label();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)picBorrow).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picReturn).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picClear).BeginInit();
@@ -152,11 +153,21 @@
             label4.TabIndex = 12;
             label4.Text = "Return";
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(349, 226);
+            label5.Name = "label5";
+            label5.Size = new Size(63, 25);
+            label5.TabIndex = 13;
+            label5.Text = "Return";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(760, 477);
+            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(listNames);
@@ -192,5 +203,6 @@
         private ListBox listNames;
         private Label label3;
         private Label label4;
+        private Label label5;
     }
 }
