@@ -38,6 +38,8 @@
             label2 = new Label();
             picClear = new PictureBox();
             listNames = new ListBox();
+            label3 = new Label();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)picBorrow).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picReturn).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picClear).BeginInit();
@@ -132,11 +134,31 @@
             listNames.TabIndex = 10;
             listNames.SelectedIndexChanged += listNames_SelectedIndexChanged;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(160, 425);
+            label3.Name = "label3";
+            label3.Size = new Size(69, 25);
+            label3.TabIndex = 11;
+            label3.Text = "Borrow";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(274, 425);
+            label4.Name = "label4";
+            label4.Size = new Size(63, 25);
+            label4.TabIndex = 12;
+            label4.Text = "Return";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(760, 477);
+            Controls.Add(label4);
+            Controls.Add(label3);
             Controls.Add(listNames);
             Controls.Add(picClear);
             Controls.Add(label2);
@@ -168,5 +190,7 @@
         private Label label2;
         private PictureBox picClear;
         private ListBox listNames;
+        private Label label3;
+        private Label label4;
     }
 }
